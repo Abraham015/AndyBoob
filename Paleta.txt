@@ -1,0 +1,5 @@
+Paleta de colores
+#EFB2EF Rosita
+#FAFEA8 amarillo
+#F9AF75 Naranja
+#BB7640 Café
