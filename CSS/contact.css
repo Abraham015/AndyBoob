@@ -1,0 +1,132 @@
+/*Configuraciones para toda la página*/
+body {
+  background-color: white;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: justify;
+  margin: 0;
+}
+/*Para el contenido de la página*/
+.container {
+  width: 85%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/*Para el encabezado de la página*/
+.header {
+  background-color: #bb7640;
+  padding: 2rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.3em;
+}
+
+.menu-icon_contact {
+  display: none;
+}
+
+.navigation_contact .contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation_contact .contact li {
+  display: inline-block;
+}
+
+.navigation_contact .contact li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+}
+
+.contact li a:hover {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+/*Para el cuerpo de la página*/
+.main {
+  padding-top: 8rem;
+}
+
+p{
+    padding-top: 2em;
+}
+
+/*Para el mapa del sitio*/
+.container_map {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0;
+  
+}
+
+/*para el pie de página*/
+.footer {
+  background-color: #bb7640;
+  padding: 0.5rem 0;
+  text-align: center;
+  margin-top: 3rem;
+  color: white;
+}
+
+/*Para la parte responsive, es decir, cuando se consulte en celulares u otros dispositivos*/
+@media only screen and (max-width: 547px) {
+  iframe {
+    width: 100%;
+  }
+  .menu-icon_contact {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+
+  .navigation_contact {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navigation_contact ul {
+    display: none;
+  }
+
+  .navigation_contact ul.show {
+    display: block;
+  }
+
+  .navigation_contact ul li {
+    display: block;
+  }
+
+  .navigation_contact ul li a {
+    display: block;
+    padding: 0.5rem 0rem;
+    transition: all 0.4s linear;
+  }
+
+  .navigation_contact ul li a:hover {
+    background-color: #bb7640;
+  }
+}
