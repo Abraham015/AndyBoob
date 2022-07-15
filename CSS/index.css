@@ -5,6 +5,7 @@ body {
   line-height: 1.4rem;
   text-align: justify;
   margin: 0;
+  
 }
 /*Para el contenido de la página*/
 .container {
@@ -24,7 +25,7 @@ body {
 }
 
 .header a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -61,7 +62,7 @@ body {
 }
 
 .navigation ul li a:hover{
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
 }
 
@@ -76,6 +77,7 @@ body {
     padding: 1rem 0;
     text-align: center;
     margin-top: 6rem;
+    color: white;
 }
 
 /*Para la parte responsive, es decir, cuando se consulte en celulares u otros dispositivos*/
