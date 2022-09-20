@@ -1,0 +1,192 @@
+/*Configuraciones para toda la página*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  src: url("https://fonts.googleapis.com/css?family=Noto Sans");
+}
+
+body {
+  background-color: white;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: justify;
+  margin: 0;
+}
+/*Para el contenido de la página*/
+.container {
+  width: 85%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.images{
+  padding-top: 2rem;
+  position: relative;
+  z-index: -1;
+}
+
+/*Unificacion del tamaño de las imagenes*/
+.carousel-inner > .carousel-item > img {
+  object-fit: scale-down;
+  height: 75vh;
+  width: 100%;
+}
+
+.main{
+  padding-left: 18%;
+  padding-top: 8rem;
+}
+
+/*Para el encabezado de la página*/
+.header {
+  background-color: #bb7640;
+  padding: 2rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  letter-spacing: 15px;
+  font-size: 1.3em;
+  pointer-events: none;
+  cursor: default;
+}
+
+.menu-icon_work {
+  display: none;
+}
+
+.navigation_work .work {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation_work .work li {
+  display: inline-block;
+}
+
+.navigation_work .work li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  font-size: 24px;
+}
+
+.navigation_work .work li a:hover {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+
+.work li a{
+  background-color: #BB7640;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.work li a:hover{
+  background-color: #434343;
+}
+
+.work>li{
+  float: left;
+}
+
+.work li ul{
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.work li:hover> ul{
+  display: block;
+}
+
+/*para el pie de página*/
+.footer {
+  background-color: #bb7640;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 6rem;
+  color: white;
+}
+
+/*Para la parte responsive, es decir, cuando se consulte en celulares u otros dispositivos*/
+@media only screen and (max-width: 547px) {
+  .menu-icon_work {
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 25px;
+  }
+
+  .images{
+    padding-top: 2rem;
+  }
+
+  .carousel-inner > .carousel-item > img {
+    object-fit: scale-down;
+    height: 25vh;
+    width: 100%;
+  }
+
+  .logo {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .navigation_work {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navigation_work .work {
+    display: none;
+  }
+
+  .navigation_work .work.show {
+    display: block;
+  }
+
+  .navigation_work .work li {
+    display: block;
+  }
+
+  .navigation_work .work li a {
+    display: block;
+    padding: 0.5rem 0rem;
+    transition: all 0.4s linear;
+  }
+
+  .navigation_work .work li a:hover {
+    background-color: #bb7640;
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+  }
+}
