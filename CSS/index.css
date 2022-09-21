@@ -28,42 +28,8 @@ body {
 }
 
 /*Para el encabezado de la página*/
-/*#header{
-    margin: auto;
-    width: 500px;
-}
-
-ul, ol{
-    list-style: none;
-}
-
-.nav li a{
-    background-color: #000;
-    color: #FFF;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.nav li a:hover{
-    background-color: #434343;
-}
-
-.nav>li{
-    float: left;
-}
-
-.nav li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-
-.nav li:hover> ul{
-    display: block;
-}*/
 .header{
-    background-color: #BB7640;
+    background-color: #722f37;
     padding: 2rem 0;
     position: fixed;
     left: 0;
@@ -88,6 +54,11 @@ ul, ol{
     font-size: 1.3em;
     pointer-events: none;
     cursor: default;
+}
+
+.logo img{
+    width: 15%;
+    height: 15%;
 }
 
 .menu-icon{
@@ -117,7 +88,7 @@ ul, ol{
 }
 
 .nav li a{
-    background-color: #BB7640;
+    background-color: #722f37;
     color: #FFF;
     text-decoration: none;
     padding: 10px 15px;
@@ -144,17 +115,27 @@ ul, ol{
 
 /*Para el cuerpo de la página*/
 .main{
-    padding-top: 8rem;
+    padding-top: 20%;
+}
+
+.main .container .text p{
+    font-size: 25px;
 }
 
 /*para el pie de página*/
 .footer{
-    background-color: #BB7640;
-    padding: 1rem 0;
+    background-color: #722f37;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 12.9rem;
     color: white;
+    height: 100px;
 }
+
+.pie{
+    position: relative;
+    font-size: 20px;
+    top: 40px;
+  }
 
 /*Para la parte responsive, es decir, cuando se consulte en celulares u otros dispositivos*/
 @media only screen and (max-width: 547px) {
